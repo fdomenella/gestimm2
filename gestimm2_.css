@@ -1,0 +1,380 @@
+ body {
+ 	margin-top: 0px;
+ 	margin-bottom: 0px;
+ 	margin-left: 0px;
+ 	margin-right: 0px;
+	background-image: url(images/head_back.jpg);
+ }
+
+ a{
+ 	text-decoration: underline;
+	color: Black;
+ }
+ 
+ img{
+ 	border: 0px;
+ }
+ 
+ #body{
+ 	height: 100%;
+	width: 100%;
+	
+ }
+ 
+ #head{
+ 	position: relative;
+ 	float: left;
+  	height: 134 	px;
+	width: 100%;
+ 	
+
+	background-image: url(images/head_back.jpg);
+	background-repeat:  repeat-y;
+
+	z-index: 100;
+ }
+ 
+ 
+#center{
+	position: relative;
+	float: left;
+ 	height: 86.8%;
+		background-image: url(images/head_back.jpg);
+}
+
+#sx{
+	position: relative;
+	float:left;
+	width: 200px;
+ 	height: auto !important;
+	min-height: 250px;
+	height: 250px;
+	background-image: url(images/head_back.jpg);
+	background-repeat: repeat-y;
+	background-color: #474747;
+}
+ 
+#dx{
+	position: relative;
+	float: left;
+	
+ 	 	height: auto !important;
+	min-height: 500px;
+	height: 500px;
+	padding: 20px;
+	background-color: White;
+	border: 3px solid Black ;
+
+}
+#menu_sx {
+	color: White;
+}
+#menu_sx a {
+	color: White;
+}
+#menu_sx strong {
+	color: White;
+}
+
+#footer{
+	position: relative;
+	height: 60px;
+	width: 100%;
+	background-image: url(images/bg_footer.jpg);
+	background-repeat: repeat-x;
+
+}
+
+div.clienti{
+	text-align: center;
+}
+
+#clienti1{ /* per la table */
+	width: auto;
+	margin: 5px;
+	background-color: White;
+	border-top:  1px solid Black;
+	border-left:  1px solid Black;
+	border-right:  2px solid Black;
+	border-bottom:  2px solid Black;
+	padding: 0;	
+	border-collapse: collapse;
+}
+#clienti{ /* per la table  dei CLIENTI_INDEX*/
+	width: auto;
+	margin: 5px;
+	background-color: White;
+	border-top:  1px solid Black;
+	border-left:  1px solid Black;
+	border-right:  2px solid Black;
+	border-bottom:  2px solid Black;
+	padding: 0;	
+	border-collapse: collapse;
+}
+#lista_immobili_cliente{ /* per la table LISTA IMMOBILI CLIENTI SU CLIENTI_SHOW*/
+	width: auto;
+	margin: 5px;
+	background-color: White;
+	border-top:  1px solid Black;
+	border-left:  1px solid Black;
+	border-right:  2px solid Black;
+	border-bottom:  2px solid Black;
+	padding: 0;	
+	border-collapse: collapse;
+}
+#lista_richieste_cliente{ /* per la table LISTA RICHIESTE CLIENTI SU CLIENTI_SHOW */
+	width: auto;
+	margin: 5px;
+	background-color: White;
+	border-top:  1px solid Black;
+	border-left:  1px solid Black;
+	border-right:  2px solid Black;
+	border-bottom:  2px solid Black;
+	padding: 0;	
+	border-collapse: collapse;
+}
+#immobili_index{ /* per la table LISTA IMMOBILI SU IMMOBILI INDEX */
+	width: auto;
+	margin: 5px;
+	background-color: White;
+	border-top:  1px solid Black;
+	border-left:  1px solid Black;
+	border-right:  2px solid Black;
+	border-bottom:  2px solid Black;
+	padding: 0;	
+	border-collapse: collapse;
+}
+
+#lista_richieste_index{ /* per la table LISTA RICHIESTE SU RICHIESTE INDEX */
+	width: auto;
+	margin: 5px;
+	background-color: White;
+	border-top:  1px solid Black;
+	border-left:  1px solid Black;
+	border-right:  2px solid Black;
+	border-bottom:  2px solid Black;
+	padding: 0;	
+	border-collapse: collapse;
+}
+
+.clienti_header{
+	text-align: center;
+	font-size: 13px; 
+	font-weight: bold;
+	background-color: #9F0000;
+	color: White;
+}
+
+td.clienti{
+	padding-left: 2px;
+	text-align: left;
+	font-size: 14px; 
+	font-weight: normal;
+	border-bottom: 1px dotted #8A0000;
+	width: 200px;
+	height: 30px;
+}
+
+td.clienti_nomeCliente{
+	padding-left: 20px;
+	text-align: left;
+	font-size: 14px; 
+	font-weight: normal;
+	border-bottom: 1px dotted #8A0000;
+	width: 180px;
+	height: 30px;
+
+}
+td.clienti_opz{
+	padding-left: 20px;
+	text-align: left;
+	font-size: 14px; 
+	font-weight: normal;
+	border-bottom: 1px dotted #8A0000;
+	width: 100px;
+	height: 30px;
+
+
+}
+td.clienti_rif{
+	text-align: center;
+	font-size: 14px; 
+	font-weight: normal;
+	border-bottom: 1px dotted #8A0000;
+	width: 70px;
+	height: 30px;
+}
+
+
+.clienti_show_header{
+	text-align: right;
+	font-size: 13px; 
+	font-weight: bold;
+	padding-right: 17px;
+	border-bottom: 1px dotted #ffffff;
+	background-color: #9F0000;
+	color: White;
+	width: 130px;
+	height: 25px;
+
+}
+
+td.clienti_show{
+	padding-left: 12px;
+	text-align: left;
+	font-size: 14px; 
+	font-weight: normal;
+	border-bottom: 1px dotted #8A0000;
+	width: 400px;
+	height: 25px;
+	
+}
+
+
+
+
+td.clienti_show_submit{
+	padding-left: 12px;
+	text-align: left;
+	font-size: 14px; 
+	font-weight: normal;
+	border-bottom: 1px dotted #8A0000;
+
+	height: 25px;
+	
+}
+.clienti_add_header{
+	padding:20px;
+
+
+}
+
+td.clienti_add{
+	padding:20px;
+	
+}
+
+
+td.foto_box{
+
+	text-align: left;
+	font-size: 14px; 
+	font-weight: normal;
+	border: 1px dotted #8A0000;
+	width: 185px;
+	height: 150px;
+}
+
+
+td.doc_box{
+	text-align: left;
+	font-size: 12px; 
+	padding-left: 3px;
+	font-weight: normal;
+	border: 1px dotted #8A0000;
+	width: 185px;
+
+}
+
+td.foto_gest_header{
+
+	text-align: center;
+	font-size: 14px; 
+	font-weight: normal;
+	border: 1px dotted #8A0000;
+	width: 185px;
+	height: 150px;
+}
+
+
+
+td.foto_opzioni{
+	padding-left: 12px;
+	text-align: left;
+	font-size: 16px; 
+	font-weight: normal;
+	border: 1px dotted #8A0000;
+	width: 185px;
+	height: 150px;
+	
+}
+
+.clienti_header_top{
+	text-align: center;
+	font-size: 13px; 
+	font-weight: bold;
+	background-color: #9F0000;
+	border-bottom: 1px solid white;
+	color: White;
+}
+
+
+.img_menu_sx{
+	border: none;
+	vertical-align: middle;
+	height: 30px;
+	width: 31px;
+	margin-right: 3px;
+}
+
+.img_doc{
+	border: none;
+	vertical-align: middle;
+	margin-right: 3px;
+	width: 34px;
+}
+
+.cliente_opzioni{
+	margin-left: 15px;
+}
+
+.torna{
+	text-align: right;
+	font-size: 12px;
+	color: Black;
+	font-weight: bold;
+	margin: -9px;
+}
+
+
+
+.opt1 {
+	background: #CCCCCC;
+}
+.opt2 {
+	background: #CCCCFF;
+}
+.opt3 {
+   background: #FFCCFF;
+}
+
+.readonly{
+	color: black;
+	font-weight: bold;
+
+	background-color: #D3D3D3;
+}	 
+	
+	
+.thead{
+	cursor:pointer;
+}	
+	 
+	
+/**
+* STILE PER VISUALIZZAZIONE DELLE RIGHE CON PASSAGGIO SOPRA DEL MOUSE
+*/
+
+.tableRollOverEffect1{
+		background-color:#e0e0e0;
+		color: black;
+
+	}
+
+	
+.tableRowClickEffect1{
+		background-color:#777777;
+		color:#FFF;
+
+	}
+	

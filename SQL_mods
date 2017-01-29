@@ -1,0 +1,125 @@
+-- per aggiunta visitatori immobili
+
+
+
+
+--
+-- Struttura della tabella `immobile_visite`
+--
+
+CREATE TABLE `immobile_visite` (
+  `id_visita` int(11) NOT NULL,
+  `id_imm` int(11) NOT NULL,
+  `id_cli` int(11) NOT NULL,
+  `data` text COLLATE utf8_unicode_ci,
+  `note` text COLLATE utf8_unicode_ci NOT NULL,
+  `inserito_da` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Indici per le tabelle scaricate
+--
+
+--
+-- Indici per le tabelle `immobile_visite`
+--
+ALTER TABLE `immobile_visite`
+  ADD PRIMARY KEY (`id_visita`);
+
+--
+-- AUTO_INCREMENT per le tabelle scaricate
+--
+
+--
+-- AUTO_INCREMENT per la tabella `immobile_visite`
+--
+ALTER TABLE `immobile_visite`
+  MODIFY `id_visita` int(11) NOT NULL AUTO_INCREMENT;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+
+
+
+-- fine aggiunta visitatori immobili
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE `immobile` ADD `esclusiva` INT NOT NULL AFTER `al_piano`;
+ALTER TABLE `immobile` ADD `esclusiva_durata` TEXT NULL DEFAULT NULL AFTER `esclusiva`;
+
+
+ALTER TABLE `immobile` ADD `note_sito` LONGTEXT NULL DEFAULT NULL AFTER `esclusiva_durata`;
+
+
+CREATE TABLE `immobile_vendita` (
+  `id_imm` int(11) NOT NULL,
+  `id_cli` int(11) NOT NULL,
+  `data` text NOT NULL,
+  `prezzo` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `immobile_vendita`
+--
+ALTER TABLE `immobile_vendita`
+  ADD PRIMARY KEY (`id_imm`,`id_cli`);
+
+
+
+
+CREATE TABLE `notes` (
+  `id` int(11) NOT NULL,
+  `descrizione` text NOT NULL,
+  `id_imm` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `notes`
+--
+ALTER TABLE `notes`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `notes`
+--
+ALTER TABLE `notes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `notes` ADD `autore` INT NULL AFTER `id_imm`, ADD `data` TEXT NULL AFTER `autore`;
+
+ALTER TABLE `immagine` ADD `ordine` INT(5) NOT NULL DEFAULT '0' AFTER `id_utente_last_mod`;
+
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+
+
+-- aggiornare in prod notes_gest.php

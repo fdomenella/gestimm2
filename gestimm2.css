@@ -1,0 +1,816 @@
+ body {
+ 	margin-top: 0px;
+ 	margin-bottom: 0px;
+ 	margin-left: 0px;
+ 	margin-right: 0px;
+	background-color:#808080;
+ }
+
+ a{
+ 	text-decoration: underline;
+	color: Black;
+ }
+ 
+ img{
+ 	border: 0px;
+ }
+ 
+ #body{
+ 	height: 100%;
+	width: 100%;
+ }
+ 
+ #head{
+  	height: 100px;
+	width: 100%;
+ 	position: relative;
+	z-index:100;
+	background-color:#C4CBD1;
+	
+ }
+ 
+ 
+#center{
+	position: relative;
+	width: 1024px;
+ 	height: 86.8%;
+}
+
+#sx{
+	position: relative;
+	float:left;
+ 	height: 86.8%;
+	background-color: #C4CBD1;
+}
+ 
+#dx{
+	position: relative;
+	float: left;
+	width: 1280px;
+ 	height:100%;
+	padding: 20px;
+
+
+}
+
+
+#footer{
+	position: relative;
+	height: 60px;
+	width: 100%;
+	background-image: url(images/bg_footer.jpg);
+	background-repeat: repeat-x;
+
+}
+
+div.clienti{
+	text-align: center;
+}
+
+#clienti1{ /* per la table */
+	width: auto;
+	margin: 5px;
+	background-color: White;
+	border-top:  1px solid Black;
+	border-left:  1px solid Black;
+	border-right:  2px solid Black;
+	border-bottom:  2px solid Black;
+	padding: 0;	
+	border-collapse: collapse;
+}
+#clienti{ /* per la table  dei CLIENTI_INDEX*/
+	width: auto;
+	margin: 5px;
+	background-color: White;
+	border-top:  1px solid Black;
+	border-left:  1px solid Black;
+	border-right:  2px solid Black;
+	border-bottom:  2px solid Black;
+	padding: 0;	
+	border-collapse: collapse;
+}
+#lista_immobili_cliente{ /* per la table LISTA IMMOBILI CLIENTI SU CLIENTI_SHOW*/
+	width: auto;
+	margin: 5px;
+	background-color: White;
+	border-top:  1px solid Black;
+	border-left:  1px solid Black;
+	border-right:  2px solid Black;
+	border-bottom:  2px solid Black;
+	padding: 0;	
+	border-collapse: collapse;
+}
+#lista_richieste_cliente{ /* per la table LISTA RICHIESTE CLIENTI SU CLIENTI_SHOW */
+	width: auto;
+	margin: 5px;
+	background-color: White;
+	border-top:  1px solid Black;
+	border-left:  1px solid Black;
+	border-right:  2px solid Black;
+	border-bottom:  2px solid Black;
+	padding: 0;	
+	border-collapse: collapse;
+}
+#immobili_index{ /* per la table LISTA IMMOBILI SU IMMOBILI INDEX */
+	width: auto;
+	margin: 5px;
+	background-color: White;
+	border-top:  1px solid Black;
+	border-left:  1px solid Black;
+	border-right:  2px solid Black;
+	border-bottom:  2px solid Black;
+	padding: 0;	
+	border-collapse: collapse;
+}
+
+#lista_richieste_index{ /* per la table LISTA RICHIESTE SU RICHIESTE INDEX */
+	width: auto;
+	margin: 5px;
+	background-color: White;
+	border-top:  1px solid Black;
+	border-left:  1px solid Black;
+	border-right:  2px solid Black;
+	border-bottom:  2px solid Black;
+	padding: 0;	
+	border-collapse: collapse;
+}
+
+.clienti_header{
+	text-align: center;
+	font-size: 13px; 
+	font-weight: bold;
+	background-color: #9F0000;
+	color: White;
+}
+
+td.clienti{
+	padding-left: 2px;
+	text-align: left;
+	font-size: 14px; 
+	font-weight: normal;
+	border-bottom: 1px dotted #8A0000;
+	width: 200px;
+	height: 30px;
+}
+
+td.clienti_rif{
+	text-align: center;
+	font-size: 14px; 
+	font-weight: normal;
+	border-bottom: 1px dotted #8A0000;
+	width: 100px;
+	height: 30px;
+}
+
+
+.clienti_show_header{
+	text-align: right;
+	font-size: 13px; 
+	font-weight: bold;
+	padding-right: 17px;
+	border-bottom: 1px dotted #ffffff;
+	background-color: #9F0000;
+	color: White;
+	width: 130px;
+	height: 25px;
+
+}
+
+td.clienti_show{
+	padding-left: 12px;
+	text-align: left;
+	font-size: 14px; 
+	font-weight: normal;
+	border-bottom: 1px dotted #8A0000;
+	width: 400px;
+	height: 25px;
+	
+}
+
+
+
+
+td.clienti_show_submit{
+	padding-left: 12px;
+	text-align: left;
+	font-size: 14px; 
+	font-weight: normal;
+	border-bottom: 1px dotted #8A0000;
+
+	height: 25px;
+	
+}
+.clienti_add_header{
+	padding:20px;
+
+
+}
+
+td.clienti_add{
+	padding:20px;
+	
+}
+
+
+td.foto_box{
+
+	text-align: left;
+	font-size: 14px; 
+	font-weight: normal;
+	border: 1px dotted #8A0000;
+	width: 185px;
+	height: 150px;
+}
+
+
+td.doc_box{
+	text-align: left;
+	font-size: 12px; 
+	padding-left: 3px;
+	font-weight: normal;
+	border: 1px dotted #8A0000;
+	width: 185px;
+
+}
+
+td.foto_gest_header{
+
+	text-align: center;
+	font-size: 14px; 
+	font-weight: normal;
+	border: 1px dotted #8A0000;
+	width: 185px;
+	height: 150px;
+}
+
+
+
+td.foto_opzioni{
+	padding-left: 12px;
+	text-align: left;
+	font-size: 16px; 
+	font-weight: normal;
+	border: 1px dotted #8A0000;
+	width: 185px;
+	height: 150px;
+	
+}
+
+.clienti_header_top{
+	text-align: center;
+	font-size: 13px; 
+	font-weight: bold;
+	background-color: #9F0000;
+	border-bottom: 1px solid white;
+	color: White;
+}
+
+
+.img_menu_sx{
+	border: none;
+	vertical-align: middle;
+	height: 30px;
+	width: 31px;
+	margin-right: 3px;
+}
+
+.img_doc{
+	border: none;
+	vertical-align: middle;
+	margin-right: 3px;
+	width: 34px;
+}
+
+.cliente_opzioni{
+	margin-left: 15px;
+}
+
+.torna{
+	text-align: right;
+	font-size: 12px;
+	color: Black;
+	font-weight: bold;
+	margin: -9px;
+}
+
+
+
+.opt1 {
+	background: #CCCCCC;
+}
+.opt2 {
+	background: #CCCCFF;
+}
+.opt3 {
+   background: #FFCCFF;
+}
+
+.readonly{
+	color: black;
+	font-weight: bold;
+
+	background-color: #D3D3D3;
+}	 
+	
+	
+.thead{
+	cursor:pointer;
+}	
+	 
+	 
+/*
+
+STILE PER MENù STILE WIN XP
+
+*/
+
+.ad{
+	margin-top:12px;
+	}
+	/*h1{
+		font-size:0.9em;
+	}*/
+
+	
+	/* Entire pane */
+	
+	#dhtmlgoodies_xpPane{
+z-index: 1;
+		float:left;
+		width:200px;
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel{
+		margin-left:10px;
+		margin-right:10px;
+		margin-top:10px;	
+
+	}
+	#dhtmlgoodies_xpPane .panelContent{
+		font-size:14px;
+		background-image:url('images/bg_pane_right.gif');
+		background-position:top right;
+		background-repeat:repeat-y;
+		border-left:1px solid #FFF;
+		border-bottom:1px solid #FFF;	
+		padding-left:2px;
+		padding-right:2px;	
+		overflow:hidden;
+		position:relative;
+
+		clear:both;
+	}
+	#dhtmlgoodies_xpPane .panelContent div{
+		position:relative;
+
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel .topBar{
+		background-image:url('images/bg_panel_top_right.gif');
+		background-repeat:no-repeat;
+		background-position:top right;
+		height:25px;
+		padding-right:5px;
+		cursor:pointer;
+		overflow:hidden;
+
+	
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel .topBar span{
+		line-height:25px;
+		vertical-align:middle;
+		font-family:arial;
+		font-size:0.7em;
+		color:#215DC6;
+		font-weight:bold;
+		float:left;
+		padding-left:5px;
+
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel .topBar img{
+		float:right;
+		cursor:pointer;
+
+	}
+	#otherContent{	/* Normal text content */
+		float:left;	/* Firefox - to avoid blank white space above panel */
+		padding-left:10px;	/* A little space at the left */
+	}	
+
+
+/*
+
+FINE STILE WIN XP
+
+
+*/
+/*
+
+STILE MENU ORIZZONATALE CSS
+*/
+
+#menu {
+width: 100%;
+float: left;
+
+}
+
+#menu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+width: 130px;
+float: left;
+
+
+}
+
+#menu a, #menu h2 {
+font: bold 11px/16px arial, helvetica, sans-serif;
+display: block;
+border-width: 1px;
+border-style: solid;
+border-color: #ccc #888 #555 #bbb;
+margin: 0;
+padding: 2px 3px;
+
+}
+
+#menu h2 {
+color: #000;
+background: #000;
+text-transform: uppercase;
+height: 10px;
+background-image: url(images/bg_menu_oriz.jpg);
+}
+
+#menu a {
+color: #000;
+background: #efefef;
+text-decoration: none;
+
+}
+
+#menu a:hover {
+color: #a00;
+background: #fff;
+z-index: 500;
+}
+
+#menu li {position: relative;z-index: 500;}
+
+#menu ul ul {
+position: absolute;
+z-index: 500;
+}
+
+#menu ul ul ul {
+position: absolute;
+top: 0;
+left: 100%;
+
+}
+
+div#menu ul ul,
+div#menu ul li:hover ul ul,
+div#menu ul ul li:hover ul ul
+{display: none;}
+
+div#menu ul li:hover ul,
+div#menu ul ul li:hover ul,
+div#menu ul ul ul li:hover ul
+{display: block;}
+
+</style>
+<!--[if IE]>
+<style type="text/css" media="screen">
+ #menu ul li {float: left; width: 100%;}
+</style>
+<![endif]-->
+<!--[if lt IE 7]>
+<style type="text/css" media="screen">
+body {
+	behavior: url(csshover.htc);
+	font-size: 100%;
+}
+
+#menu ul li a {height: 1%;} 
+
+#menu a, #menu h2 {
+font: bold 0.7em/1.4em arial, helvetica, sans-serif;
+}
+
+
+/**
+* STILE PER VISUALIZZAZIONE DELLE RIGHE CON PASSAGGIO SOPRA DEL MOUSE
+*/
+
+.tableRollOverEffect1{
+		background-color:#7979F9;
+		color:#FFF;
+
+	}
+
+	
+	.tableRowClickEffect1{
+		background-color:#F00;
+		color:#FFF;
+
+	}
+	
+
+
+
+/*
+
+FINE STILE MENU ORIZZONATALE CSS
+
+
+*/
+
+
+
+
+
+
+
+/*Forms defaults*/
+input, textarea {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#404040;
+}
+label {
+	color:#999;
+	cursor:pointer;
+	padding-left:2px;
+	line-height:15px;
+	vertical-align:top;
+}
+label.chosen {
+	color:#333;
+}
+
+/*Transparent items*/
+.transparent {
+	filter:alpha(opacity=0);
+	-moz-opacity:0;
+	opacity: 0;
+	border:0px solid #FFF;
+	background:#FFF;
+	z-index:10;
+	cursor:pointer;
+}
+.transparentFake {
+	background:none;
+	border:none;
+}
+.transparent2 {
+	z-index:10;
+}
+
+/*Radio buttons*/
+.radioAreaUnchecked, .radioAreaChecked {
+	z-index:5;
+	position:absolute;
+	width:15px;
+	height:15px;
+	cursor:pointer;
+}
+.radioAreaUnchecked {
+	background:url(images/radio.gif) no-repeat left top;
+}
+.radioAreaChecked {
+	background:url(images/radio.gif) no-repeat left bottom;
+}
+
+/*Checkboxes*/
+.checkboxAreaUnchecked, .checkboxAreaChecked {
+	z-index:5;
+	position:absolute;
+	width:14px;
+	height:14px;
+	cursor:pointer;
+}
+.checkboxAreaUnchecked {
+	background:url(images/checkbox.gif) no-repeat left top;
+}
+.checkboxAreaChecked {
+	background:url(images/checkbox.gif) no-repeat left bottom;
+}
+
+/*Text inputs*/
+.textinput, .textinputHovered {
+	width:236px;
+	height:15px;
+	background:url(images/input.gif) no-repeat left top;
+	border:none;
+	padding:4px 8px;
+}
+.textinputHovered {
+	background-position:left bottom;
+}
+
+/*Text areas*/
+.textarea, .textareaHovered {
+	width:336px;
+	height:125px;
+	background:url(images/textarea.gif) no-repeat left top;
+	border:none;
+	padding:4px 8px;
+}
+.textareaHovered {
+	background-position:left bottom;
+}
+
+/*Selects*/
+.selectArea {
+	width:200px;
+	height:21px;
+	background:url(images/select_bg.gif) repeat-x left top;
+}
+.selectArea .left {
+	width:8px;
+	height:21px;
+	float:left;
+	background:url(images/select_left.gif) no-repeat left top;
+}
+.selectArea .right {
+	width:21px;
+	height:21px;
+	float:right;
+	background:url(images/select_right.gif) no-repeat left top;
+}
+.selectArea .right a {
+	display:block;
+	width:21px;
+	height:21px;
+}
+.selectArea .right i {
+	display:none;
+}
+.selectArea .center {
+	width:160px;
+	margin-left:5px;
+	margin-right:20px;
+	color:#FFF;
+	padding-top:3px;
+}
+
+/*Selects drop-down*/
+.optionsDivInvisible, .optionsDivVisible {
+	position:absolute;
+	margin-top:-1px;
+	margin-left:3px;
+	width:172px;
+	background:#6f7074;
+	padding:2px;
+	font-size:11px;
+	z-index:20;
+}
+.optionsDivInvisible {
+	display:none;
+}
+.optionsDivVisible {
+	display:block;
+}
+.optionsDivVisible p {
+	margin:0;
+	padding:0;
+}
+.optionsDivVisible a {
+	color:#F2F2F2;
+	text-decoration:none;
+	display:block;
+	padding:1px 4px;
+	border:1px solid #6f7074;
+}
+.optionsDivVisible a:hover {
+	color:#FFF;
+	background:#5F6062;
+	border-color:#cfd0d6;
+}
+
+/*Button*/
+.buttonSubmit, .buttonSubmitHovered {
+	width:69px;
+	
+	height:26px;
+	color:#FFF;
+	font-weight:bold;
+	padding:2px 5px;
+	background:url(images/button.gif) no-repeat left top;
+	cursor:pointer;
+	border:none;
+}
+.buttonSubmitHovered {
+	background-position:left bottom;
+}
+
+/*Test div - testing if stylesheets are enabled*/
+#stylesheetTest {
+	position:absolute;
+	left:-999px;
+	width:10px;
+	height:10px;
+}
+
+
+#temp{
+	font-size: 12px;
+}
+ul#{
+	list-style: none;
+	
+margin: 0;
+padding:2;
+
+
+
+}
+
+
+
+
+
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+.suckertreemenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+/*Top level list items*/
+.suckertreemenu ul li{
+position: relative;
+display: inline;
+float: left;
+background-color: #F3F3F3; /*overall menu background color*/
+}
+
+/*Top level menu link items style*/
+.suckertreemenu ul li a{
+display: block;
+width: 90px; /*Width of top level menu link items*/
+padding: 1px 8px;
+border: 1px solid black;
+border-left-width: 0;
+text-decoration: none;
+color: navy;
+}
+	
+/*1st sub level menu*/
+.suckertreemenu ul li ul{
+left: 0;
+position: absolute;
+top: 1em; /* no need to change, as true value set by script */
+display: block;
+visibility: hidden;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.suckertreemenu ul li ul li{
+display: list-item;
+float: none;
+}
+
+/*All subsequent sub menu levels offset after 1st level sub menu */
+.suckertreemenu ul li ul li ul{ 
+left: 159px; /* no need to change, as true value set by script */
+top: 0;
+}
+
+/* Sub level menu links style */
+.suckertreemenu ul li ul li a{
+display: block;
+width: 160px; /*width of sub menu levels*/
+color: navy;
+text-decoration: none;
+padding: 1px 5px;
+border: 1px solid #ccc;
+}
+
+.suckertreemenu ul li a:hover{
+background-color: black;
+color: white;
+}
+
+/*Background image for top level menu list links */
+.suckertreemenu .mainfoldericon{
+background: #F3F3F3 url(media/arrow-down.gif) no-repeat center right;
+}
+
+/*Background image for subsequent level menu list links */
+.suckertreemenu .subfoldericon{
+background: #F3F3F3 url(media/arrow-right.gif) no-repeat center right;
+}
+
+* html p#iepara{ /*For a paragraph (if any) that immediately follows suckertree menu, add 1em top spacing between the two in IE*/
+padding-top: 1em;
+}
+	
+/* Holly Hack for IE \*/
+* html .suckertreemenu ul li { float: left; height: 1%; }
+* html .suckertreemenu ul li a { height: 1%; }
+/* End */
+
