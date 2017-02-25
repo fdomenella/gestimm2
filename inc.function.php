@@ -1105,7 +1105,7 @@ function lista_immobili($id_tipo_locazione=""){
 	$str="";
 
 	if ($id_tipo_locazione=="all") {
-		$q="select * from immobile where archiviato=0 ORDER BY id_imm DESC";
+		$q="select * from immobile where archiviato<>1 ORDER BY id_imm DESC";
 	}else {
 		$q="select * from immobile where id_tipo_locazione = $id_tipo_locazione and archiviato=0 ORDER BY id_imm DESC";
 	}
